@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Posterrr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <div class="app">
+        <h1 class="app__title">Posterrr</h1>
+        <div class="app__form">
+            <input class="app__form-input" type="text" placeholder="Search for a movie" data-binding="input" />
+            <button class="app__form-button" type="button" data-binding="button">Search</button>
+            <span class="app__form-error" data-binding="error">No results found</span>
+        </div>
+        <div class="app__results">
+            <ul class="app__results-list" data-binding="list">
+            </ul>
+        </div>
+        <img class="app__poster" data-binding="result-image">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
